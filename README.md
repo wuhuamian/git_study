@@ -24,5 +24,14 @@ git的使用：
 	git commit -m ''
 	git remote add origin https://github.com/wuhuamian/git_study.git
 	git push origin master
+配置全局用户名和邮箱
+	git config --global user.name "xxx"
+	git config --global user.email "xxx@xxx.com"
+
+git checkout -- <file>
+git reset HEAD <file>
+
+从仓库里clone代码
+	git clone https://github.com/wuhuamian/git_study.git
 
    
