@@ -28,8 +28,9 @@ git的使用：
 	git config --global user.name "xxx"
 	git config --global user.email "xxx@xxx.com"
 
-git checkout -- <file>
-git reset HEAD <file>
+git checkout -- file 撤销对工作区修改；这个命令是以最新的存储时间节点（add和commit）为参照，覆盖工作区对应文件file；这个命令改变的是工作区
+
+git reset HEAD <file> 清空add命令向暂存区提交的关于file文件的修改（Ustage）；这个命令仅改变暂存区，并不改变工作区
 
 从仓库里clone代码
 	git clone https://github.com/wuhuamian/git_study.git
