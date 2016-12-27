@@ -28,8 +28,10 @@ git的使用：
 	git config --global user.name "xxx"
 	git config --global user.email "xxx@xxx.com"
 
+从远程仓库中拉取本地工作区没有的文件
 git checkout -- file 撤销对工作区修改；这个命令是以最新的存储时间节点（add和commit）为参照，覆盖工作区对应文件file；这个命令改变的是工作区
 
+删除远程仓库上 本地没有的文件
 git reset HEAD <file> 清空add命令向暂存区提交的关于file文件的修改（Ustage）；这个命令仅改变暂存区，并不改变工作区
 
 从仓库里clone代码
