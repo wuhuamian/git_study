@@ -25,8 +25,8 @@ git的使用：
 	git remote add origin https://github.com/wuhuamian/git_study.git
 	git push -u origin master
 配置全局用户名和邮箱
-	git config --global user.name "xxx"
-	git config --global user.email "xxx@xxx.com"
+	git config --global user.name "wuhuamian"
+	git config --global user.email "1746699469@qq.com"
 
 push an existing repository from the command line:
 	git remote add origin https://github.com/wuhuamian/xxx.git
