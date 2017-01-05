@@ -21,7 +21,7 @@ git的使用：
 5.上传文件到GitHub中建立的仓库
 	git init
 	git add .
-	git commit -m ''
+	git commit -m ""
 	git remote add origin https://github.com/wuhuamian/git_study.git
 	git push -u origin master
 配置全局用户名和邮箱
@@ -49,9 +49,9 @@ git命令简化：
 
 ----------------------------------------------------------------------------------------------------
 	git add -A /git add . --添加所有未添加文件
-	git commit -m '备注内容' --提交到库
+	git commit -m "备注内容" --提交到库
 	
-   《=》git commit -a -m '备注内容' --添加并提交
+   《=》git commit -a -m "备注内容" --添加并提交
 
 代码提交远程服务器（如果本地创建库，则没有服务器地址）
 	git remote --列出服务器端的别名
@@ -60,3 +60,8 @@ git命令简化：
 	git fetch origin  --复制对方的仓库到本地，但不合并，git pull会自动合并
  	git merge origin/master  --把对方master分支合并到自己当前版本下
 	git push origin master --添加master分支到名字为origin的服务器上  
+
+创建并管理分支
+	git branch test --创建分支
+	git checkout test --转到test分支
+	git checkout master --转到master分支
