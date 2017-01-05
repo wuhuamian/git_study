@@ -23,10 +23,14 @@ gitµÄÊ¹ÓÃ£º
 	git add .
 	git commit -m ''
 	git remote add origin https://github.com/wuhuamian/git_study.git
-	git push origin master
+	git push -u origin master
 ÅäÖÃÈ«¾ÖÓÃ»§ÃûºÍÓÊÏä
 	git config --global user.name "xxx"
 	git config --global user.email "xxx@xxx.com"
+
+push an existing repository from the command line:
+	git remote add origin https://github.com/wuhuamian/xxx.git
+	git push -u origin master
 
 git checkout -- file ³·Ïú¶Ô¹¤×÷ÇøĞŞ¸Ä£»Õâ¸öÃüÁîÊÇÒÔ×îĞÂµÄ´æ´¢Ê±¼ä½Úµã£¨addºÍcommit£©Îª²ÎÕÕ£¬¸²¸Ç¹¤×÷Çø¶ÔÓ¦ÎÄ¼şfile£»Õâ¸öÃüÁî¸Ä±äµÄÊÇ¹¤×÷Çø
 
@@ -34,5 +38,13 @@ git reset HEAD <file> Çå¿ÕaddÃüÁîÏòÔİ´æÇøÌá½»µÄ¹ØÓÚfileÎÄ¼şµÄĞŞ¸Ä£¨Ustage£©£»Õâ¸
 
 ´Ó²Ö¿âÀïclone´úÂë
 	git clone https://github.com/wuhuamian/git_study.git
+
+gitÃüÁî¼ò»¯£º
+	git status -> git st
+	git config --global alias.st status
+
+
+·¢ÏÖ£ºÃüÁî´´½¨ÎÄ¼ş£¬²¢Ğ´ÈëÄÚÈİ£º
+	echo [ÒªĞ´ÈëµÄÄÚÈİ] > ´´½¨µÄÎÄ¼ş   Èç¹ûÏë¸²¸ÇÎÄ¼şÖ±½ÓÔÙÖ´ĞĞÒ»±é£¬Èç¹ûÏë¼ÌĞøÌí¼ÓÄÚÈİµÄ»°ÔòÓÃ>> 
 
    
