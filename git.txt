@@ -52,4 +52,11 @@ git命令简化：
 	git commit -m '备注内容' --提交到库
 	
    《=》git commit -a -m '备注内容' --添加并提交
-   
+
+代码提交远程服务器（如果本地创建库，则没有服务器地址）
+	git remote --列出服务器端的别名
+	git remote -v --列出服务器地址
+	git remote add origin https://github.com/wuhuamian/git_study.git  --添加对方的地址  origin是别名
+	git fetch origin  --复制对方的仓库到本地，但不合并，git pull会自动合并
+ 	git merge origin/master  --把对方master分支合并到自己当前版本下
+	git push origin master --添加master分支到名字为origin的服务器上  
